@@ -1,17 +1,28 @@
 body {
   margin: 0;
+  
 }
 
+h1{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 23px;
+  padding: 0px 0px 10px 15px;
+}
+
+.hide {
+  display: none;
+
+}
 .grid-top {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(1, 100px);
-  gap: 10px;
+  grid-template-rows: repeat(8, 71px);
+  gap: 2px;
 }
 
 .grid-item {
   background: gray;
-  display: none;
+  
 }
 
 .medium-grid {
@@ -24,10 +35,20 @@ body {
   grid-column: span 2;
 }
 
+.hero-pic{
+  grid-column: span 8;
+  grid-row: span 4;
+}
+
 .menu-icon img {
-  width: 70%;
+  padding: 20px 0px 0px 24px;
+  width: 40%;
+}
+
+.hero-pic img {
+  width: 150%;
 }
 
 @media (min-width: 768px) {}
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) {}
