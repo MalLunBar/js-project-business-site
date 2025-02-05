@@ -1,12 +1,12 @@
 body {
   margin: 0;
   background-color: rgb(252, 251, 244);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 23px;
-  padding: 0px 0px 10px 15px;
+  text-align: center;
+  font-size: 25px;
 }
 
 
@@ -48,11 +48,32 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
+  padding: 5px;
 }
 
 .main {
   grid-column: span 4;
 }
+
+.product{
+  margin: 10px;
+  border-radius: 10px;
+  background-color: rgb(37, 90, 21, 0.5);
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ad-pic{
+  width: 90%;
+  border-radius: 10px;
+}
+
+
+/* Saker att tänka på innan jag är klar:
+- Kolla på videon för att förstå hur man bestämmer rows.
+- Se till att det finns någon typ av autostrech grej som hon gjorde i videon så att allt ser normalt ut när man stretchar ut  */
 
 @media (min-width: 768px) {}
 
