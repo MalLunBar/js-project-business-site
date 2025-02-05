@@ -10,27 +10,49 @@ h1 {
   padding: 0px 0px 10px 15px;
 }
 
+.flex-parent {
+  background-color: green;
+  display: flex;
+  max-height: 71px;
+
+}
+
+.flex-child {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+  background-color: blueviolet;
+
+}
+
+.flex-child img {
+  height: 70%;
+  padding: 10px;
+
+
+}
+
 .hide {
   display: none;
 
 }
 
-.grid-top {
+/* .grid-top {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 71px);
   gap: 2px;
-}
+} */
 
 /* .grid-item {
 
 } */
-
+/* 
 .medium-grid {
   display: block;
   grid-column: span 6;
 
-}
+} */
 
 .menu-icon {
   grid-column: span 2;
