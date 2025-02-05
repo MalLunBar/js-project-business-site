@@ -54,20 +54,46 @@ h1 {
 
 .main {
   grid-column: span 4;
+  margin: 5px;
 }
 
-.product{
+
+/* Allt i själva annonsen  */
+.main-head {
+  font-size: 25px;
+  text-align: center;
+}
+
+.product {
   margin: 10px;
   border-radius: 10px;
-  background-color: rgb(37, 90, 21, 0.5);
-  padding: 5px;
+  background-color: rgb(37, 90, 21, 0.3);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+
 }
-.ad-pic{
-  width: 90%;
-  border-radius: 10px;
+
+.ad-pic {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.ad-text {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 10px 10px;
+}
+
+.product h4 {
+  font-size: 20px;
+  margin: 5px 0px;
+}
+
+.product p {
+  margin: 0;
+  font-size: 15px;
+
 }
 
 
