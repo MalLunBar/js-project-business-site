@@ -28,7 +28,6 @@ h1 {
 
 .hero-pic {
   grid-column: span 4;
-  grid-row: span 4;
 }
 
 .menu-icon {
@@ -37,12 +36,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 100px;
 }
 
 .menu-icon img {
-
   width: 40%;
-
 }
 
 .hero-pic img {
@@ -55,23 +53,33 @@ h1 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 5px;
+  padding: 10px;
 }
 
+.text-box h2 {
+  font-size: 20px;
+}
+
+.text-box p {
+  font-size: 15px;
+}
+
+.middle {
+  grid-column: span 4;
+}
 
 /* Allt i själva annonsen  */
 .main {
   grid-column: span 4;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-
 
 .main-head {
   grid-column: span 4;
-  font-size: 25px;
+  font-size: 20px;
   text-align: center;
-  
 }
 
 .product {
@@ -79,6 +87,7 @@ h1 {
   border-radius: 10px;
   background-color: rgb(37, 90, 21, 0.3);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  max-width: 280px;
 
 }
 
@@ -94,20 +103,92 @@ h1 {
 }
 
 .product h4 {
-  font-size: 20px;
+  font-size: 18px;
   margin: 5px 0px;
 }
 
 .product p {
   margin: 0;
   font-size: 15px;
-
 }
 
 
-/* Saker att tänka på innan jag är klar:
-- Kolla på videon för att förstå hur man bestämmer rows.
-- Se till att det finns någon typ av autostrech grej som hon gjorde i videon så att allt ser normalt ut när man stretchar ut  */
+@media (min-width: 400px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .medium-grid {
+    grid-column: 1 / 5;
+  }
+
+  .hero-pic {
+    grid-column: span 5;
+  }
+
+  .middle {
+    grid-column: span 5;
+  }
+
+  .main {
+    grid-column: span 5;
+  }
+
+  .main-head {
+    grid-column: span 5;
+  }
+
+  .product {
+    margin: 10px 0px;
+  }
+
+}
+
+@media (min-width: 481px) {
+  .grid {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  .medium-grid {
+    grid-column: 1 / 7;
+  }
+
+  .menu-icon {
+    grid-column: span 2;
+    max-width: 200px;
+  }
+
+  .hero-pic {
+    grid-column: span 8;
+  }
+
+  .middle {
+    grid-column: span 8;
+  }
+
+  .main {
+    grid-column: span 4;
+  }
+
+
+  .main-head {
+    grid-column: span 8;
+  }
+
+  .product {
+    margin: 5px;
+
+  }
+}
+
+@media (min-width: 600px) {
+
+  /* Fråga om det går att lösa med storlekarna */
+  .main {
+    grid-column: span 2;
+  }
+
+}
 
 @media (min-width: 768px) {}
 
