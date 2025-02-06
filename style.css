@@ -1,83 +1,62 @@
 body {
   margin: 0;
+  padding: 0;
   background-color: rgb(252, 251, 244);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+
+/* HEADER-----------------------*/
 h1 {
-  text-align: center;
   font-size: 25px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+}
 
-.hide {
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-container {
+  min-width: 200px;
+}
+
+.logo-container {
+  min-width: 50px;
+  max-width: 70px;
+  background-color: rgb(37, 90, 21, 0.5);
+  border-radius: 2px;
+}
+
+.logo-container img {
+  width: 50%;
+  height: 50%;
+}
+
+.nav-links {
   display: none;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: (auto, 71px);
-
-}
-
-.medium-grid {
-  grid-column: 1 / 4;
-}
 
 
-.hero-pic {
-  grid-column: span 4;
-}
 
-.menu-icon {
-  background-color: rgb(37, 90, 21, 0.5);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100px;
-}
 
-.menu-icon img {
-  width: 40%;
-}
-
-.hero-pic img {
-  width: 100%;
-}
-
-.text-box {
-  background-color: white;
+/* MIDDLE ----------------------*/
+.middle-flex {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 10px;
 }
 
-.text-box h2 {
-  font-size: 20px;
-}
-
-.text-box p {
-  font-size: 15px;
-}
-
-.middle {
-  grid-column: span 4;
-}
-
-/* Allt i själva annonsen  */
-.main {
-  grid-column: span 4;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+/* MAIN  ----------------------*/
+.main {}
 
 .main-head {
-  grid-column: span 4;
+
   font-size: 20px;
   text-align: center;
 }
@@ -113,82 +92,11 @@ h1 {
 }
 
 
-@media (min-width: 400px) {
-  .grid {
-    grid-template-columns: repeat(5, 1fr);
-  }
+@media (min-width: 400px) {}
 
-  .medium-grid {
-    grid-column: 1 / 5;
-  }
+@media (min-width: 481px) {}
 
-  .hero-pic {
-    grid-column: span 5;
-  }
-
-  .middle {
-    grid-column: span 5;
-  }
-
-  .main {
-    grid-column: span 5;
-  }
-
-  .main-head {
-    grid-column: span 5;
-  }
-
-  .product {
-    margin: 10px 0px;
-  }
-
-}
-
-@media (min-width: 481px) {
-  .grid {
-    grid-template-columns: repeat(8, 1fr);
-  }
-
-  .medium-grid {
-    grid-column: 1 / 7;
-  }
-
-  .menu-icon {
-    grid-column: span 2;
-    max-width: 200px;
-  }
-
-  .hero-pic {
-    grid-column: span 8;
-  }
-
-  .middle {
-    grid-column: span 8;
-  }
-
-  .main {
-    grid-column: span 4;
-  }
-
-
-  .main-head {
-    grid-column: span 8;
-  }
-
-  .product {
-    margin: 5px;
-
-  }
-}
-
-@media (min-width: 600px) {
-
-  /* Fråga om det går att lösa med storlekarna */
-  .main {
-    grid-column: span 2;
-  }
-
-}
+@media (min-width: 600px) {}
 
 @media (min-width: 768px) {}
 
