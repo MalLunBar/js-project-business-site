@@ -24,6 +24,7 @@ h1 {
 
 .head-container {
   min-width: 200px;
+  
 }
 
 .logo-container {
@@ -43,20 +44,39 @@ h1 {
 }
 
 
-
-
-
 /* MIDDLE ----------------------*/
+.middle {
+  background-color: white;
+}
+
 .middle-flex {
   display: flex;
   flex-direction: column;
+}
+
+.text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 7%;
+}
+
+.text-box h2, p {
+  margin: 2%;
+  text-align: center;
+}
+.text-box h2 {
+  font-size: 20px;
+}
+
+.text-box p {
+  font-size: 15px;
 }
 
 /* MAIN  ----------------------*/
 .main {}
 
 .main-head {
-
   font-size: 20px;
   text-align: center;
 }
@@ -92,9 +112,15 @@ h1 {
 }
 
 
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+  
+}
 
-@media (min-width: 481px) {}
+@media (min-width: 481px) {
+  .text-box {
+    min-height: 200px;
+  }
+}
 
 @media (min-width: 600px) {}
 
