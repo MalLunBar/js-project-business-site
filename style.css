@@ -11,23 +11,22 @@ h1 {
   font-size: 23px;
 }
 
-.header {
+.menu {
   display: flex;
   justify-content: space-between;
 }
 
-.flex-item {
+/* .nav {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
-.head-container {
-  min-width: 200px;
-
-}
 
 .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 50px;
   max-width: 70px;
   background-color: rgb(37, 90, 21, 0.5);
