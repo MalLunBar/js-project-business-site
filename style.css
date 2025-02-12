@@ -17,13 +17,6 @@ h1 {
   justify-content: space-between;
 }
 
-/* .nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-
-
 .logo-container {
   display: flex;
   justify-content: center;
@@ -57,10 +50,6 @@ h1 {
   background-color: white;
 }
 
-picture img {
-  width: 100%;
-}
-
 .text-box {
   display: flex;
   flex-direction: column;
@@ -70,7 +59,9 @@ picture img {
 }
 
 .text-box h2,
-p {
+.text-box p,
+.signup-text h3,
+.signup-text p {
   margin: 2%;
   text-align: center;
 }
@@ -85,12 +76,12 @@ p {
 
 /* MAIN  ----------------------*/
 .product-head {
-
   text-align: center;
   font-size: 20px;
 }
 
-.product-container {
+.product-container,
+.form-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -121,6 +112,45 @@ p {
   font-size: 15px;
   margin: 5px 0px;
 }
+
+/* FORM to get 10% off  */
+
+.form-section {
+  margin-top: 10%;
+}
+
+.form-container {
+  grid-column: span 4;
+  background-image: url(images/form-img-mobile.jpg);
+  height: 50vh;
+  background-size: cover;
+  display: flex;
+
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 4px;
+}
+.form-img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (min-width: 400px) {
