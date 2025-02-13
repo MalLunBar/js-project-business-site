@@ -152,36 +152,49 @@
     </section>
 
     <!-- FORM to get 10% off -->
-    <section class="form-section">
-      <div class="form-container">
 
-        <form
-          class="form"
-          action="https://httpbin.org/anything"
-          method="post"
+    <section class="form-container">
+
+      <form
+        class="form"
+        action="https://httpbin.org/anything"
+        method="post"
+      >
+
+
+        <div class="signup-text">
+          <h3>No bullshit, just amazing offers</h3>
+          <p>Sign up to our newsletter and get 20% off your first order</p>
+        </div>
+
+        <input
+          class="personal-data"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
         >
-
-
-          <div class="signup-text">
-            <h3>No bullshit, just offers</h3>
-            <p>Sign up today and get 20% off your first order</p>
-          </div>
-
-          <input
-            type="email"
-            name="email"
+        <input
+          class="personal-data"
+          type="number"
+          name="number"
+          placeholder="Phone number (optional)"
+        >
+        <div class="terms">
+          <input class="terms-box"
+            type="checkbox"
+            name="checkbox"
           >
-          <input
-            type="number"
-            name="number"
-          >
-          <input type="submit">
+          <p class="terms-text">I agree to the <a href="#">Terms and Conditions</a> and confirm that I have read the
+            Privacy Policy</p>
+        </div>
+        <input type="submit">
 
 
 
-        </form>
-      </div>
+      </form>
     </section>
+
   </main>
   <footer>
 

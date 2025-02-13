@@ -115,9 +115,7 @@ h1 {
 
 /* FORM to get 10% off  */
 
-.form-section {
-  margin-top: 10%;
-}
+
 
 .form-container {
   grid-column: span 4;
@@ -125,6 +123,8 @@ h1 {
   height: 50vh;
   background-size: cover;
   display: flex;
+  margin-top: 10%;
+  
 
 }
 
@@ -135,10 +135,36 @@ h1 {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 4px;
+  padding: 20px;
 }
 .form-img {
   width: 100%;
 }
+
+input {
+  margin: 2%;
+  border: none;
+  
+}
+
+.personal-data{
+  min-width: 200px;
+  min-height: 30px;
+}
+
+.terms {
+  display: flex;
+  
+}
+.terms-box {
+  min-width: 15px;
+}
+
+.terms-text {
+  font-size: 12px;
+}
+
+
 
 
 
