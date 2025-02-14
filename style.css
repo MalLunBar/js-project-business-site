@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(252, 251, 244);
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Poppins", serif;
 }
 
 
@@ -10,26 +10,49 @@ body {
 h1 {
   font-size: 23px;
   padding-left: 5%;
+  margin: 5%;
 }
 
 .menu {
   display: flex;
   justify-content: space-between;
+
 }
 
-.logo-container {
+.menu-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-left {
+  min-width: 170px;
+}
+
+.logo-container,
+.icon-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 50px;
-  max-width: 70px;
+  min-width: 60px;
+  max-width: 60px;
   background-color: rgb(37, 90, 21, 0.5);
   border-radius: 2px;
 }
 
 .logo-container img {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+
+}
+
+.icon-container {
+  min-width: 25px;
+  max-width: 30px;
+  background-color: rgb(252, 251, 244);
+  margin-right: 5%;
+}
+
+.icon-container img {
+  width: 60%;
 }
 
 .nav-links {
@@ -218,6 +241,11 @@ input[type="checkbox"]:checked {
 
 
 @media (min-width: 400px) {
+  .menu-right {
+    min-width: 200px;
+
+  }
+
   .product-container {
     grid-template-columns: repeat(6, 1fr);
   }
@@ -232,7 +260,13 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 481px) {
+  .icon-container {
+    margin-right: 7%;
+  }
 
+  .icon-container img {
+    width: 70%;
+  }
 
   .product-container {
     grid-template-columns: repeat(8, 1fr);
@@ -252,6 +286,11 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 600px) {
+  .icon-container img {
+    width: 75%;
+
+  }
+
   .product-container {
     grid-template-columns: repeat(9, 1fr);
   }
@@ -270,12 +309,13 @@ input[type="checkbox"]:checked {
   .nav {
     display: flex;
     align-items: center;
+    min-width: 300px;
   }
 
   .nav-links {
     display: flex;
     justify-content: space-around;
-    min-width: 500px;
+    width: 100%;
 
   }
 
@@ -287,6 +327,11 @@ input[type="checkbox"]:checked {
 
   .nav-links a:hover {
     color: darkolivegreen;
+    text-decoration: underline;
+  }
+
+  .icon-container {
+    margin-right: 3%;
   }
 
   .logo-container {
@@ -308,62 +353,42 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 850px) {
-  h1 {
-    font-size: 25px;
+  .icon-container{
+    margin: 0 4%;
   }
 
-  .nav-links a {
-    font-size: 18px;
+  .nav {
+    min-width: 350px;
   }
-
-  .text-box h2 {
-    font-size: 23px;
-  }
-
-  .text-box p {
-    font-size: 18px;
-  }
-
-  .product-head {
-    font-size: 23px;
-  }
-
-  .ad-text h4 {
-    font-size: 20px;
-  }
-
-  .text-box {
-    padding: 0% 15%;
-  }
-
-  .nav-links {
-    min-width: 600px;
-  }
+  
 
 }
 
 @media (min-width: 1024px) {
+
   .text-box {
     padding: 0% 20%;
+  }
+
+  .nav {
+    min-width: 400px;
   }
 }
 
 @media (min-width: 1150px) {
-
-
-  .nav-links {
-    min-width: 700px;
+  .nav {
+    min-width: 420px;
   }
+
+  
 }
 
-@media (min-width: 1300px) {
-
-  .nav-links {
-    min-width: 800px;
-  }
-}
 
 @media (min-width: 1400px) {
+  .nav {
+    min-width: 450px;
+  }
+  
   .product-container {
     grid-template-columns: repeat(16, 1fr);
     margin-left: 100px;
@@ -373,9 +398,7 @@ input[type="checkbox"]:checked {
     grid-column: span 3;
   }
 
-  .nav-links {
-    min-width: 900px;
-  }
+  
 
 
 }
