@@ -174,7 +174,7 @@ input {
 
 .personal-data,
 .submit-button {
-  min-width: 200px;
+  min-width: 250px;
   min-height: 30px;
 }
 
@@ -274,48 +274,40 @@ input {
 
   /* test!! */
   .form-container {
-    margin-top: 10%;
     flex-direction: row;
+    align-items: stretch;
     background-image: none;
     padding: 0;
-    background-color: gray;
-    padding: 2%;
-    border-radius: 8px;
-    height: 55vh;
-
   }
 
   .test {
-    display: block;
-    background-size: cover;
-
+    display: flex;
+    height: 100%;
   }
 
   .test img {
-    width: 100%
+    width: 100%;
   }
 
   .form {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0;
-    width: 100%;
+    background-color: pink;
     border-radius: 0;
-
   }
 
   .form h3 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .form p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
+  .submit-button {
+    font-weight: 600;
+    font-size: 18px;
+  }
 
   /* test!! */
-
-
-
 
 }
 
@@ -332,8 +324,19 @@ input {
   .product {
     grid-column: span 3;
     margin: 2% 5%;
-
   }
+
+  .test img {
+    content: url(images/form-img3.webp);
+    object-fit: cover;
+  }
+
+
+
+
+
+
+
 
 }
 
@@ -394,6 +397,15 @@ input {
   .nav {
     min-width: 350px;
   }
+
+  .form-container {
+    height: 45vh;
+
+
+
+  }
+
+  .form {}
 
 
 }
