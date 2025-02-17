@@ -60,7 +60,7 @@ h1 {
 }
 
 .hero-pic {
-  background-image: url(images/hero-pic2.jpg);
+  background-image: url(images/hero-pic2.webp);
   height: 45vh;
   background-size: cover;
   background-position: left;
@@ -141,7 +141,7 @@ h1 {
 
 
 .form-container {
-  background-image: url(images/form-img1.jpg);
+  background-image: url(images/form-img1.webp);
   height: 50vh;
   background-size: cover;
   display: flex;
@@ -150,7 +150,10 @@ h1 {
   margin-top: 10%;
   padding: 20px;
 
+}
 
+.test {
+  display: none;
 }
 
 .form {
@@ -185,19 +188,6 @@ input {
 }
 
 /* FIXA DET HÄR SEN  */
-input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  height: 20px;
-  width: 20px;
-  background-color: #d5d5d5;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  display: url(images/check.png);
-}
 
 
 
@@ -206,10 +196,9 @@ input[type="checkbox"]:checked {
 
 
 
-.label-checkbox {
-  font-size: 14px;
-  font-weight: 600;
-}
+
+
+
 
 
 
@@ -257,9 +246,16 @@ input[type="checkbox"]:checked {
   .text-box {
     min-height: 200px;
   }
+
+
+
+
+
+
 }
 
 @media (min-width: 481px) {
+
   .icon-container {
     margin-right: 7%;
   }
@@ -276,12 +272,50 @@ input[type="checkbox"]:checked {
     grid-column: span 4;
   }
 
+  /* test!! */
   .form-container {
-    height: 40vh;
-    padding: 30px;
-
+    margin-top: 10%;
+    flex-direction: row;
+    background-image: none;
+    padding: 0;
+    background-color: gray;
+    padding: 2%;
+    border-radius: 8px;
+    height: 55vh;
 
   }
+
+  .test {
+    display: block;
+    background-size: cover;
+
+  }
+
+  .test img {
+    width: 100%
+  }
+
+  .form {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+
+  }
+
+  .form h3 {
+    font-size: 14px;
+  }
+
+  .form p {
+    font-size: 12px;
+  }
+
+
+  /* test!! */
+
+
+
 
 }
 
@@ -353,14 +387,14 @@ input[type="checkbox"]:checked {
 }
 
 @media (min-width: 850px) {
-  .icon-container{
+  .icon-container {
     margin: 0 4%;
   }
 
   .nav {
     min-width: 350px;
   }
-  
+
 
 }
 
@@ -380,7 +414,7 @@ input[type="checkbox"]:checked {
     min-width: 420px;
   }
 
-  
+
 }
 
 
@@ -388,7 +422,7 @@ input[type="checkbox"]:checked {
   .nav {
     min-width: 450px;
   }
-  
+
   .product-container {
     grid-template-columns: repeat(16, 1fr);
     margin-left: 100px;
@@ -398,7 +432,7 @@ input[type="checkbox"]:checked {
     grid-column: span 3;
   }
 
-  
+
 
 
 }
