@@ -22,6 +22,8 @@ h1 {
 .menu-right {
   display: flex;
   justify-content: flex-end;
+
+
 }
 
 .menu-left {
@@ -35,19 +37,25 @@ h1 {
   align-items: center;
   min-width: 60px;
   max-width: 60px;
-  background-color: rgb(37, 90, 21, 0.5);
   border-radius: 2px;
+  cursor: pointer;
+  
+}
+
+.logo-container {
+  z-index: 1;
+  background-color: rgb(108, 148, 96);
 }
 
 .logo-container img {
   width: 40%;
+  z-index: 2;
 
 }
 
 .icon-container {
   min-width: 25px;
   max-width: 30px;
-  background-color: rgb(252, 251, 244);
   margin-right: 5%;
 }
 
@@ -55,9 +63,35 @@ h1 {
   width: 60%;
 }
 
+/* test */
 .nav-links {
-  display: none;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: absolute;
+  right: 0;
+  height: 230px;
+  width: 100px;
+  background: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1;
 }
+
+.nav-links a {
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: darkolivegreen;
+  text-decoration: underline;
+}
+
+/* test end  */
 
 .hero-pic {
   background-image: url(images/hero-pic2.webp);
@@ -149,7 +183,6 @@ h1 {
   justify-content: center;
   margin-top: 10%;
   padding: 20px;
-
 }
 
 .test {
@@ -187,44 +220,11 @@ input {
   display: flex;
 }
 
-/* FIXA DET HÄR SEN  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .submit-button:hover {
-  background-color: #45a049;
+  background-color: #637464;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* -------------MEDIA QUERIES--------------------- */
 
 
 
@@ -356,17 +356,6 @@ input {
 
   }
 
-  .nav-links a {
-    font-size: 16px;
-    color: black;
-    text-decoration: none;
-  }
-
-  .nav-links a:hover {
-    color: darkolivegreen;
-    text-decoration: underline;
-  }
-
   .icon-container {
     margin-right: 3%;
   }
@@ -406,7 +395,6 @@ input {
 }
 
 @media (min-width: 1024px) {
-
   .text-box {
     padding: 0% 20%;
   }
