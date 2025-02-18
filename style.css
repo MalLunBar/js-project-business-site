@@ -365,8 +365,15 @@ input {
 
   .nav-links {
     display: flex;
-    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    z-index: auto;
+    position: static;
     width: 100%;
+    background: none;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
 
   }
 
@@ -398,7 +405,7 @@ input {
   }
 
   .nav {
-    min-width: 350px;
+    min-width: 320px;
   }
 
   .form-container {
@@ -414,7 +421,7 @@ input {
   }
 
   .nav {
-    min-width: 400px;
+    min-width: 350px;
   }
 }
 
@@ -429,7 +436,7 @@ input {
 
 @media (min-width: 1400px) {
   .nav {
-    min-width: 450px;
+    min-width: 370px;
   }
 
   .product-container {
