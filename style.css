@@ -397,6 +397,10 @@ input {
     grid-column: span 3;
   }
 
+  .form {
+    flex-grow: 2;
+  }
+
 }
 
 @media (min-width: 850px) {
