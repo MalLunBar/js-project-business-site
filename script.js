@@ -6,6 +6,4 @@ hamburgerBtn.onclick = () => {
   mobileMenu.classList.toggle('active');
   hamburgerBtn.classList.toggle('active');
   menuIcon.classList.toggle('active');
-
-
 };
