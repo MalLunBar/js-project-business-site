@@ -10,7 +10,7 @@
   <title>Soft Stiches</title>
   <link
     rel="stylesheet"
-    href="style.css"
+    href="./style.css"
   >
   <link
     rel="preconnect"
@@ -30,7 +30,7 @@
 
 <body>
   <!-- HEADER----------------------- -->
-  <header class="header">
+  <header>
     <div class="menu">
       <div class="menu-left">
         <h1>Soft Stiches</h1>
@@ -99,7 +99,6 @@
         >
         <div class="ad-text">
           <h4>Morgan</h4>
-          <p></p>
         </div>
       </article>
 
@@ -111,7 +110,6 @@
         >
         <div class="ad-text">
           <h4>Dakota</h4>
-          <p></p>
         </div>
       </article>
 
@@ -123,7 +121,6 @@
         >
         <div class="ad-text">
           <h4>Sage</h4>
-          <p></p>
         </div>
       </article>
 
@@ -135,7 +132,6 @@
         >
         <div class="ad-text">
           <h4>Avery</h4>
-          <p></p>
         </div>
       </article>
 
@@ -147,7 +143,6 @@
         >
         <div class="ad-text">
           <h4>Taylor</h4>
-          <p></p>
         </div>
       </article>
 
@@ -159,7 +154,6 @@
         >
         <div class="ad-text">
           <h4>Riley</h4>
-          <p></p>
         </div>
       </article>
 
@@ -171,7 +165,6 @@
         >
         <div class="ad-text">
           <h4>Quinn</h4>
-          <p></p>
         </div>
       </article>
 
@@ -183,7 +176,6 @@
         >
         <div class="ad-text">
           <h4>Emery</h4>
-          <p></p>
         </div>
       </article>
     </section>
@@ -191,12 +183,7 @@
     <!-- FORM to get 10% off -->
 
     <section class="form-container">
-      <div class="form-img-container">
-        <img
-          src="images/form-img1.webp"
-          alt=""
-        >
-      </div>
+      
       <form
         class="form"
         action="https://httpbin.org/anything"
@@ -217,8 +204,8 @@
           >
           <input
             class="personal-data"
-            type="number"
-            name="number"
+            type="tel"
+            name="tel"
             placeholder="Phone number (optional)"
           >
           <div class="terms">
@@ -227,6 +214,7 @@
               type="checkbox"
               name="checkbox"
               checked
+              required
             >
             <label class="label-checkbox">Subscribe to our newsletter</label>
           </div>
@@ -240,14 +228,11 @@
 
       </form>
     </section>
-
   </main>
+
   <footer>
 
-
-
   </footer>
-
   <script src="script.js"></script>
 </body>
 

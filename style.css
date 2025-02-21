@@ -121,9 +121,7 @@ h1 {
 }
 
 .text-box h2,
-.text-box p,
-.signup-text h3,
-.signup-text p {
+.text-box p {
   margin: 2%;
   text-align: center;
 }
@@ -142,18 +140,20 @@ h1 {
   font-size: 20px;
 }
 
-.product-container,
-.form-section {
+.product-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  margin: 0 10%;
+
 }
 
 .product {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 10px;
   background-color: rgb(37, 90, 21, 0.3);
-  margin: 2% 10%;
+  margin-top: 5%;
   max-width: 260px;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
   grid-column: span 4;
@@ -177,19 +177,16 @@ h1 {
 
 /* FORM to get 20% off  */
 .form-container {
-  background-image: url(images/form-img1.webp);
-  height: 50vh;
+  background-image: url(images/form-img1-turned.webp);
   background-size: cover;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 10%;
-  padding: 20px;
+  padding: 5%;
+
 }
 
-.form-img-container {
-  display: none;
-}
 
 .form {
   display: flex;
@@ -197,9 +194,24 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  padding: 20px;
+  border-radius: 8px;
+  padding: 5px;
+
 }
+
+.form h3,
+.form p,
+.label-checkbox,
+.submit-button {
+  font-size: 14px;
+  margin: 2%;
+  text-align: center;
+}
+
+.label-checkbox {
+  margin: 0;
+}
+
 
 .input-container {
   display: flex;
@@ -215,22 +227,32 @@ input {
 }
 
 .personal-data,
-.submit-button {
-  min-width: 250px;
-  min-height: 30px;
+.submit-button,
+.terms {
+  min-width: 240px;
+  min-height: 25px;
+  border-radius: 4px;
+  border: none;
 }
 
 .submit-button {
   font-weight: 600;
-  font-size: 18px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .terms {
   display: flex;
 }
 
+
+
 .submit-button:hover {
   background-color: #637464;
+}
+
+footer {
+  background-color: black;
+  height: 200px;
 }
 
 /* -------------MEDIA QUERIES--------------------- */
@@ -245,6 +267,7 @@ input {
 
   .product {
     grid-column: span 3;
+    margin: 5% 5%;
   }
 
   .text-box {
@@ -270,40 +293,10 @@ input {
     grid-column: span 4;
   }
 
-
-  .form-container {
-    flex-direction: row;
-    align-items: stretch;
-    background-image: none;
-    padding: 0;
-  }
-
-  .form-img-container {
-    display: flex;
-    height: 100%;
-  }
-
-  .form-img-container img {
-    width: 100%;
-  }
-
   .form {
-    background-color: pink;
-    border-radius: 0;
+    flex-grow: 2;
   }
 
-  .form h3 {
-    font-size: 16px;
-  }
-
-  .form p {
-    font-size: 14px;
-  }
-
-  .submit-button {
-    font-weight: 600;
-    font-size: 18px;
-  }
 
 }
 
@@ -318,13 +311,12 @@ input {
 
   .product {
     grid-column: span 3;
-    margin: 2% 5%;
   }
 
-  .form-img-container img {
-    content: url(images/form-img3.webp);
-    object-fit: cover;
+  .form {
+    flex-direction: row;
   }
+
 }
 
 
@@ -369,9 +361,7 @@ input {
     grid-column: span 3;
   }
 
-  .form {
-    flex-grow: 2;
-  }
+
 }
 
 @media (min-width: 850px) {
@@ -384,7 +374,7 @@ input {
   }
 
   .form-container {
-    height: 45vh;
+    max-height: 300px;
   }
 
 }
@@ -418,7 +408,6 @@ input {
 
   .product-container {
     grid-template-columns: repeat(16, 1fr);
-    margin-left: 100px;
   }
 
   .product {
