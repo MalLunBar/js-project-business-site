@@ -244,15 +244,8 @@ input {
   display: flex;
 }
 
-
-
 .submit-button:hover {
   background-color: #637464;
-}
-
-footer {
-  background-color: black;
-  height: 200px;
 }
 
 /* -------------MEDIA QUERIES--------------------- */
@@ -313,9 +306,37 @@ footer {
     grid-column: span 3;
   }
 
+  .form-container {
+    min-height: 200px;
+  }
+
   .form {
     flex-direction: row;
+    padding: 10% 0;
+    justify-content: space-evenly;
+
   }
+
+  .signup-text {
+    margin: 0 5%;
+    max-width: 350px;
+  }
+
+  .signup-text h3 {
+    font-size: 20px;
+  }
+
+  .input-container {
+    margin: 0 5% 0 0;
+  }
+
+  .personal-data,
+  .submit-button,
+  .terms {
+    min-width: 220px;
+  }
+
+
 
 }
 
@@ -361,6 +382,15 @@ footer {
     grid-column: span 3;
   }
 
+  .form-container {
+    max-height: 300px;
+  }
+
+  .form {
+    max-height: 250px;
+
+  }
+
 
 }
 
@@ -373,9 +403,6 @@ footer {
     min-width: 320px;
   }
 
-  .form-container {
-    max-height: 300px;
-  }
 
 }
 
@@ -389,9 +416,22 @@ footer {
   }
 
   .form {
-    flex-direction: row;
-    align-items: center;
+    padding: 5% 0;
   }
+
+  .personal-data,
+  .submit-button,
+  .terms {
+    min-width: 260px;
+  }
+
+  .form p,
+  .label-checkbox,
+  .submit-button {
+    font-size: 16px;
+
+  }
+
 }
 
 @media (min-width: 1150px) {
